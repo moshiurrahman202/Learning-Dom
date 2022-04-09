@@ -46,6 +46,21 @@ ulList.classList.add("test-class");
 ulList.classList.remove("test-class");
 
 ulList.setAttribute("title", "new-title");
-ulList.removeAttribute("title")
+ulList.removeAttribute("title");
 
-console.log(ulList);
+// Event listner
+let button = document.createElement("button");
+button.id = "btn-even";
+button.appendChild(document.createTextNode("Click me!"));
+document.querySelector(".container").appendChild(button);
+
+document.getElementById("btn-even").addEventListener("click", message);
+function message(){
+    let crediv = document.createElement("div");
+    crediv.innerHTML = "<h2>List of dom event!</h2><p>mouseover,change,focus,submit,keydown,mousedown,mouseout,mouseover,clickdblclic,load,error,unload,resize.</p>";
+    document.querySelector(".container").appendChild(crediv);
+    // let crepara = document.createElement("p");
+    // crepara.appendChild(document.createTextNode())
+
+}
+

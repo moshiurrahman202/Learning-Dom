@@ -37,5 +37,15 @@ let parent = oldHeading.parentElement;
 //Finaly replace the element
 parent.replaceChild(newHeading, oldHeading);
 
+// Remove Element
+let ulList = document.querySelector("ul");
+ulList.removeChild(ulList.children[0]);
 
-console.log(parent);
+// Add class,attribute and remove
+ulList.classList.add("test-class");
+ulList.classList.remove("test-class");
+
+ulList.setAttribute("title", "new-title");
+ulList.removeAttribute("title")
+
+console.log(ulList);

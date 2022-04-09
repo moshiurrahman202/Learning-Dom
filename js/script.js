@@ -22,4 +22,20 @@ ulItem.appendChild(link);
 
 document.querySelector("ul").appendChild(ulItem);
 
-console.log(ulItem);
+
+// Replace Element
+//Create New Heading
+let newHeading = document.createElement("h1");
+newHeading.appendChild(document.createTextNode("Replace element as this h1 new heading!"));
+
+// get old heading
+let oldHeading = document.querySelector("h3");
+
+// Get parent element of heading
+let parent = oldHeading.parentElement;
+
+//Finaly replace the element
+parent.replaceChild(newHeading, oldHeading);
+
+
+console.log(parent);

@@ -64,3 +64,7 @@ function message(){
 
 }
 
+document.querySelector("#name").addEventListener("keyup", test);
+function test(e){
+    document.querySelector("#demo").innerText = e.target.value;
+}
